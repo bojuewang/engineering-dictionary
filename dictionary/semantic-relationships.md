@@ -1,6 +1,31 @@
 # `Semantic relationships`
 
-关系按 `Source → Target` 读取。类别归属由[分类索引](taxonomy.md)维护。词条中仅对有助于理解的链接标明关系。以下是仓库约定。
+## 并列关系
+
+同属一个类别的词条并列摆放。以下摘取「需求与治理」中的三个词条，完整归属见[分类索引](taxonomy.md)。
+
+```mermaid
+flowchart TD
+    rules["需求与治理"]
+    rules --- requirement["Requirement<br/>需求"]
+    rules --- constraint["Constraint<br/>约束"]
+    rules --- specification["Specification<br/>规格说明"]
+```
+
+## 平行关系
+
+围绕同一交付物，可以从两个角度分别检查。图中两条线表示不同的判断依据，实际先后由任务决定。[`Verification`](engineering-terms.md#verification) · [`Validation`](engineering-terms.md#validation)
+
+```mermaid
+flowchart TD
+    artifact["Artifact<br/>交付物"]
+    artifact --> verification["Verification<br/>是否满足规定要求？"]
+    artifact --> validation["Validation<br/>是否满足预期用途？"]
+```
+
+## 具体关系
+
+并列和平行用于看结构。需要说明依赖、组成或验证对象时，使用下表的具体关系，按 `Source → Target` 读取。
 
 | `Relation` | 类型 | 方向与含义 | 示例 |
 | --- | --- | --- | --- |

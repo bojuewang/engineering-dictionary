@@ -10,7 +10,7 @@
 
 ## 速查
 
-- **查或补术语**　[分类索引](dictionary/taxonomy.md) · [完整词典](dictionary/engineering-terms.md) · [概念关系](dictionary/semantic-relationships.md) · [词条模板](templates/term.md)
+- **查或补术语**　[分类索引](dictionary/taxonomy.md) · [完整词典](dictionary/engineering-terms.md) · [术语关系图](dictionary/semantic-relationships.md) · [词条模板](templates/term.md)
 - **统一团队约定**　[资源命名](protocols/naming-conventions.md) · [版本管理](protocols/versioning.md) · [协议模板](templates/protocol.md)
 
 <details>
