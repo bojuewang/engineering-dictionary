@@ -21,18 +21,7 @@
 
 ## `Examples`
 
-```text
-research-project/
-  data/
-    raw/
-    processed/
-  experiments/
-    001/
-      configuration.json
-      results.json
-```
-
-`experiments/001/` 已表达实验编号。如无额外区分需要，可省略 `experiments/experiment-001/` 中重复的类别名称。目录中资源的文件名遵循[文件命名协议](file-naming.md)。
+`experiments/001/results.csv` 中，`experiments/001/` 已表达实验类别和编号。若无需额外区分，可省略 `experiments/experiment-001/` 中重复的类别名称。文件名遵循[文件命名协议](file-naming.md)。
 
 ## `Verification`
 

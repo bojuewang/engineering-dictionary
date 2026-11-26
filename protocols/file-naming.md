@@ -2,8 +2,6 @@
 
 `Status` `Proposed`
 
-`Universal File Naming Protocol`（`UFNP`）是本仓库为此命名约定使用的名称。
-
 ## `Scope`
 
 本仓库自有的文件名，包括文档、数据与研究产物。[路径可移植性规则](#path-portability)也适用于目录名。
@@ -40,13 +38,10 @@
 | 推荐名称 | 应避免的名称 | 理由 |
 | --- | --- | --- |
 | `coefficient-matrix.json` | `Coefficient Matrix FINAL.json` | 名称稳定且便于跨平台使用 |
-| `fpp__equations__bicanonical.json` | `data1.json` | 字段能表达文件用途 |
+| `sample__readings__raw.csv` | `data1.csv` | 字段能表达文件用途 |
 | `2026-11-26__meeting.md` | `11-26-26 notes.md` | 日期明确且可以按文本排序 |
 | `experiment-001.json` | `experiment 1.json` | 定宽编号便于排序 |
-| `README.md` | `readme-file-v2.md` | 沿用工具识别的文件名 |
 | `device-log.txt` | `NUL.txt` | 避开保留设备名 |
-
-在 `fake-projective-planes/cs-a2-024/` 中，`equations.json` 已能标识文件。
 
 ## `Verification`
 
