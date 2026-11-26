@@ -1,0 +1,14 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# Local secrets and local build caches
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
