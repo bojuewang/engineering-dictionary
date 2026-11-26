@@ -35,7 +35,7 @@ flowchart LR
 ## 开始工作
 
 1. **对齐需求。** 先写清楚要交付什么，以及什么条件算通过。[`Requirement`](dictionary/engineering-terms.md#requirement) · [`Acceptance criterion`](dictionary/engineering-terms.md#acceptance-criterion)
-2. **给产物命名。** 如 `experiments/001/results.csv`，目录说明实验编号，文件说明内容。[文件命名](protocols/file-naming.md) · [目录命名](protocols/directory-naming.md)
+2. **给产物命名。** 如 `experiments/001/results.csv`，目录说明实验编号，文件说明内容。[命名示例教学](protocols/naming-conventions.md#naming-by-example) · [文件命名](protocols/file-naming.md) · [目录命名](protocols/directory-naming.md)
 3. **验收并留证。** 例如，要求每个交易日恰好一条记录，就核对日期集合并检查重复值，保存检查结果。[`Verification`](dictionary/engineering-terms.md#verification) · [`Evidence`](dictionary/engineering-terms.md#evidence)
 
 ## 速查
