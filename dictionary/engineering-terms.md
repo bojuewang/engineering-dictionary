@@ -2,6 +2,19 @@
 
 本术语表提供工程实践中的双语工作定义。涉及特定标准时，在对应词条中注明来源。按用途浏览 [`Engineering taxonomy`](taxonomy.md)，新增词条时使用 [`Term template`](../templates/term.md)。
 
+```mermaid
+flowchart LR
+    lookup["查找术语"] -->|按类别| taxonomy["分类索引"]
+    lookup -->|按概念| relationships["跨类别关系"]
+    taxonomy --> term["权威词条"]
+    relationships --> term
+    term --> equivalent["Chinese equivalent"]
+    term --> definition["简明定义"]
+    term -->|有相关概念时| related["Related terms"]
+```
+
+按关系查阅见[跨类别关系](semantic-relationships.md)。
+
 ## `Architecture`
 
 `Chinese equivalent` 架构

@@ -1,5 +1,13 @@
 # `Term template`
 
+```mermaid
+flowchart LR
+    name["规范英文标题"] --> chinese["Chinese equivalent"]
+    chinese --> definition["简明定义"]
+    definition -->|需要时| related["Related terms"]
+    definition --> index["分类索引登记"]
+```
+
 将以下结构复制到术语表，并替换示例字段值和定义。[`Engineering terms`](../dictionary/engineering-terms.md) · [`Specification`](../SPECIFICATION.md#dictionary-entries)
 
 ```markdown

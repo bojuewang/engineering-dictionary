@@ -2,6 +2,36 @@
 
 工程协作速查。用它查术语、给工作产物命名、记录验收证据。
 
+## 仓库总览
+
+```mermaid
+flowchart LR
+    root["README.md"] --> terms["dictionary/"]
+    root --> protocols["protocols/"]
+    root --> templates["templates/"]
+    root --> governance["维护与发布"]
+    root --> git["Git 配置"]
+    terms --> taxonomy["taxonomy.md"]
+    taxonomy --> glossary["engineering-terms.md"]
+    taxonomy --> relations["semantic-relationships.md"]
+    protocols --> filenames["file-naming.md"]
+    protocols --> directories["directory-naming.md"]
+    protocols --> naming["naming-conventions.md"]
+    protocols --> versions["versioning.md"]
+    templates --> term["term.md"]
+    templates --> protocol["protocol.md"]
+    governance --> architecture["ARCHITECTURE.md"]
+    governance --> specification["SPECIFICATION.md"]
+    governance --> agents["AGENTS.md"]
+    governance --> roadmap["ROADMAP.md"]
+    governance --> changelog["CHANGELOG.md"]
+    governance --> verification["VERIFICATION.md"]
+    git --> attrs[".gitattributes"]
+    git --> ignore[".gitignore"]
+```
+
+箭头表示导航入口，连到同一层的分支可按任务选择。图例见[有向图约定](SPECIFICATION.md#directed-diagrams)。
+
 ## 开始工作
 
 1. **对齐需求。** 先写清楚要交付什么，以及什么条件算通过。[`Requirement`](dictionary/engineering-terms.md#requirement) · [`Acceptance criterion`](dictionary/engineering-terms.md#acceptance-criterion)
@@ -10,7 +40,7 @@
 
 ## 速查
 
-- **查或补术语**　[分类索引](dictionary/taxonomy.md) · [完整词典](dictionary/engineering-terms.md) · [术语关系图](dictionary/semantic-relationships.md) · [词条模板](templates/term.md)
+- **查或补术语**　[全部术语图](dictionary/taxonomy.md) · [完整词典](dictionary/engineering-terms.md) · [跨类别关系](dictionary/semantic-relationships.md) · [词条模板](templates/term.md)
 - **统一团队约定**　[资源命名](protocols/naming-conventions.md) · [版本管理](protocols/versioning.md) · [协议模板](templates/protocol.md)
 
 <details>

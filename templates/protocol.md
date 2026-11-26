@@ -4,6 +4,15 @@
 
 将标题替换为英文协议名称。状态使用 `Proposed`、`Adopted` 或 `Deprecated` 中与实际情况对应的一个值。
 
+```mermaid
+flowchart LR
+    status["Status"] --> scope["Scope"]
+    scope --> rules["Rules"]
+    rules --> exceptions["Exceptions"]
+    exceptions --> examples["Examples"]
+    examples --> verification["Verification"]
+```
+
 ## `Scope`
 
 说明协议适用的资源、角色或操作。

@@ -6,6 +6,13 @@
 
 本仓库自有的目录名与目录组织方式。
 
+```mermaid
+flowchart LR
+    resource["待归类资源"] --> parent["选择职责明确的目录"]
+    parent --> child["省略已由上级表达的信息"]
+    child --> check["逐级核查拼写及冲突"]
+```
+
 ## `Rules`
 
 - 普通目录使用小写 `kebab-case`，每个词段由小写 `ASCII` 字母或数字组成，词段以单个连字符分隔。目录名应表达清晰的 [`Namespace`](../dictionary/engineering-terms.md#namespace)、职责或资源集合。

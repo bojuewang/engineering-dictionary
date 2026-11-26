@@ -1,26 +1,15 @@
 # `Semantic relationships`
 
-## 并列关系
+## 跨类别关系
 
-同属一个类别的词条并列摆放。以下摘取「需求与治理」中的三个词条，完整归属见[分类索引](taxonomy.md)。
-
-```mermaid
-flowchart TD
-    rules["需求与治理"]
-    rules --- requirement["Requirement<br/>需求"]
-    rules --- constraint["Constraint<br/>约束"]
-    rules --- specification["Specification<br/>规格说明"]
-```
-
-## 平行关系
-
-围绕同一交付物，可以从两个角度分别检查。图中两条线表示不同的判断依据，实际先后由任务决定。[`Verification`](engineering-terms.md#verification) · [`Validation`](engineering-terms.md#validation)
+每个类别的完整有向图，以及并列和平行关系，见[分类索引](taxonomy.md)。这里展示连接不同类别的关系。
 
 ```mermaid
-flowchart TD
-    artifact["Artifact<br/>交付物"]
-    artifact --> verification["Verification<br/>是否满足规定要求？"]
-    artifact --> validation["Validation<br/>是否满足预期用途？"]
+flowchart LR
+    implementation["Implementation"] -->|implements| specification["Specification"]
+    verification["Verification"] -->|verifies| requirement["Requirement"]
+    specification -->|汇集| requirement
+    verification -. 平行：规定要求 / 预期用途 .- validation["Validation"]
 ```
 
 ## 具体关系

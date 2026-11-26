@@ -6,6 +6,14 @@
 
 项目、仓库、源码标识符、智能体、会话及研究资源的名称。
 
+```mermaid
+flowchart LR
+    resource["待命名对象"] -->|文件或目录| path["路径命名协议"]
+    resource -->|源码符号| code["语言与生态约定"]
+    resource -->|项目、会话或研究资源| identifier["按对象选稳定标识"]
+    resource -->|版本或发布| version["版本管理协议"]
+```
+
 ## `Rules`
 
 | 对象 | 约定 |

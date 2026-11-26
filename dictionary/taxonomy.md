@@ -1,10 +1,41 @@
 # `Engineering taxonomy`
 
-本分类是仓库的导航约定。按概念在工程工作中的主要用途分组，每个词条在此索引只出现一次。跨类别的依赖和区别由词条中的链接表达。
+- **并列**：从同一个类别发出的箭头表示分类归属。每个词条只归入一类。
+- **平行**：虚线连接可以从不同角度对照的概念。
+- **有向关系**：词条之间带标签的箭头按起点到终点阅读。跨类别关系见[术语关系图](semantic-relationships.md)。
 
 ## `Systems and design`
 
 系统的组成、边界、表示及交互能力。
+
+```mermaid
+flowchart LR
+    category["系统与设计"]
+    category --> system["System"]
+    category --> component["Component"]
+    category --> architecture["Architecture"]
+    category --> interface["Interface"]
+    category --> implementation["Implementation"]
+    category --> configuration["Configuration"]
+    category --> state["State"]
+    category --> model["Model"]
+    category --> interoperability["Interoperability"]
+    category --> portability["Portability"]
+    category --> subsystem["Subsystem"]
+    category --> design["Design"]
+    category --> dependency["Dependency"]
+    category --> application_programming_interface["Application programming interface"]
+    category --> runtime["Runtime"]
+    category --> agent["Agent"]
+    subsystem -->|is-a| system
+    component -->|part-of| system
+    application_programming_interface -->|is-a| interface
+    design -->|确定| architecture
+    interoperability -. 平行：协作 / 迁移 .- portability
+```
+
+<details>
+<summary>打开词条链接</summary>
 
 - [`System`](engineering-terms.md#system)
 - [`Component`](engineering-terms.md#component)
@@ -23,9 +54,30 @@
 - [`Runtime`](engineering-terms.md#runtime)
 - [`Agent`](engineering-terms.md#agent)
 
+</details>
+
 ## `Requirements and governance`
 
 工程工作所依据的需求、约束和规则。
+
+```mermaid
+flowchart LR
+    category["需求与治理"]
+    category --> stakeholder["Stakeholder"]
+    category --> requirement["Requirement"]
+    category --> constraint["Constraint"]
+    category --> specification["Specification"]
+    category --> standard["Standard"]
+    category --> convention["Convention"]
+    category --> protocol["Protocol"]
+    category --> acceptance_criterion["Acceptance criterion"]
+    specification -->|汇集| requirement
+    acceptance_criterion -->|给出验收条件| requirement
+    standard -. 平行：标准 / 约定 .- convention
+```
+
+<details>
+<summary>打开词条链接</summary>
 
 - [`Stakeholder`](engineering-terms.md#stakeholder)
 - [`Requirement`](engineering-terms.md#requirement)
@@ -36,9 +88,42 @@
 - [`Protocol`](engineering-terms.md#protocol)
 - [`Acceptance criterion`](engineering-terms.md#acceptance-criterion)
 
+</details>
+
 ## `Information and artifacts`
 
 资源的标识、结构、来源和演变。
+
+```mermaid
+flowchart LR
+    category["信息与产物"]
+    category --> artifact["Artifact"]
+    category --> identifier["Identifier"]
+    category --> namespace["Namespace"]
+    category --> metadata["Metadata"]
+    category --> schema["Schema"]
+    category --> manifest["Manifest"]
+    category --> provenance["Provenance"]
+    category --> repository["Repository"]
+    category --> version["Version"]
+    category --> release["Release"]
+    category --> version_control["Version control"]
+    category --> data["Data"]
+    category --> serialization["Serialization"]
+    category --> source_code["Source code"]
+    category --> prompt["Prompt"]
+    category --> baseline["Baseline"]
+    metadata -->|描述| data
+    manifest -->|可包含| metadata
+    provenance -->|记录来源| artifact
+    release -->|is-a| version
+    version_control -->|记录| version
+    serialization -->|转换表示| data
+    metadata -. 平行：描述 / 约束 .- schema
+```
+
+<details>
+<summary>打开词条链接</summary>
 
 - [`Artifact`](engineering-terms.md#artifact)
 - [`Identifier`](engineering-terms.md#identifier)
@@ -57,9 +142,37 @@
 - [`Prompt`](engineering-terms.md#prompt)
 - [`Baseline`](engineering-terms.md#baseline)
 
+</details>
+
 ## `Execution and assurance`
 
 工作的组织方式及用于评估结果的证据。
+
+```mermaid
+flowchart LR
+    category["执行与核查"]
+    category --> workflow["Workflow"]
+    category --> pipeline["Pipeline"]
+    category --> test["Test"]
+    category --> measurement["Measurement"]
+    category --> evidence["Evidence"]
+    category --> verification["Verification"]
+    category --> validation["Validation"]
+    category --> traceability["Traceability"]
+    category --> risk["Risk"]
+    category --> hypothesis["Hypothesis"]
+    category --> experiment["Experiment"]
+    category --> reproducibility["Reproducibility"]
+    pipeline -->|阶段化形式| workflow
+    test -->|produces| evidence
+    measurement -->|produces| evidence
+    experiment -->|检验| hypothesis
+    reproducibility -->|评估能否复现| experiment
+    verification -. 平行：规定要求 / 预期用途 .- validation
+```
+
+<details>
+<summary>打开词条链接</summary>
 
 - [`Workflow`](engineering-terms.md#workflow)
 - [`Pipeline`](engineering-terms.md#pipeline)
@@ -74,9 +187,29 @@
 - [`Experiment`](engineering-terms.md#experiment)
 - [`Reproducibility`](engineering-terms.md#reproducibility)
 
+</details>
+
 ## `Knowledge organization`
 
 知识库中记录和复用概念的形式。
+
+```mermaid
+flowchart LR
+    category["知识组织"]
+    category --> canonical_term["Canonical term"]
+    category --> dictionary_entry["Dictionary entry"]
+    category --> template["Template"]
+    category --> concept["Concept"]
+    category --> taxonomy["Taxonomy"]
+    category --> ontology["Ontology"]
+    dictionary_entry -->|记录| canonical_term
+    canonical_term -->|命名| concept
+    template -->|提供格式| dictionary_entry
+    taxonomy -. 平行：分类 / 概念与关系 .- ontology
+```
+
+<details>
+<summary>打开词条链接</summary>
 
 - [`Canonical term`](engineering-terms.md#canonical-term)
 - [`Dictionary entry`](engineering-terms.md#dictionary-entry)
@@ -84,3 +217,5 @@
 - [`Concept`](engineering-terms.md#concept)
 - [`Taxonomy`](engineering-terms.md#taxonomy)
 - [`Ontology`](engineering-terms.md#ontology)
+
+</details>

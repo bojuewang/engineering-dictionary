@@ -6,6 +6,15 @@
 
 本仓库自有的文件名，包括文档、数据与研究产物。[路径可移植性规则](#path-portability)也适用于目录名。
 
+```mermaid
+flowchart LR
+    file["待命名文件"] -->|有外部规定| external["沿用外部名称"]
+    file -->|一般情况| stem["确定主名与格式扩展名"]
+    stem -->|需要时| fields["添加日期、编号或版本字段"]
+    stem --> check["核查可移植性和冲突"]
+    fields --> check
+```
+
 ## `Rules`
 
 1. 普通文件的主名使用小写 `ASCII` 字母、数字和连字符。需要区分语义字段时，以 `__` 分隔。
