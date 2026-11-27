@@ -2,6 +2,8 @@
 
 `Status` `Proposed`
 
+作者邮箱 `bojue.math@gmail.com`
+
 ## `Scope`
 
 项目、仓库、源码标识符、智能体、会话及研究资源的名称。

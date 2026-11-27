@@ -1,8 +1,14 @@
+页码 1/1\
+时间戳 `<YYYY-MM-DDTHH:mm:ss±HH:mm>`\
+版本 `v1.0.0`
+
 # `Protocol name`
 
 `Status` `Proposed`
 
 将标题替换为英文协议名称。状态使用 `Proposed`、`Adopted` 或 `Deprecated` 中与实际情况对应的一个值。
+
+按[文档排版规范](../SPECIFICATION.md#document-layout)填写页首字段。
 
 ```mermaid
 flowchart LR
