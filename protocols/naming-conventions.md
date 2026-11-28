@@ -1,3 +1,7 @@
+**Email:** bojue.math@gmail.com\
+**Version:** 1.0.0\
+**Last Updated:** 2026-11-28
+
 # `Naming conventions`
 
 `Status` `Proposed`
@@ -28,6 +32,8 @@ flowchart LR
 
 路径及发布规则分别见 [`File naming`](file-naming.md)、[`Directory naming`](directory-naming.md) 和 [`Versioning`](versioning.md)。
 
+文档需要标明受众时，可按[文件命名协议](file-naming.md#exceptions)使用已登记的限定字段。`__` 分隔文档族与受众。
+
 ## `Exceptions`
 
 生态规定的标识、工具文件和既有外部标识优先，例如 `pyproject.toml`。改动公开名称前先核查调用者及引用。
@@ -40,6 +46,9 @@ flowchart LR
 | 源码符号 | 在项目惯例为蛇形命名时使用 `load_dataset` | 为统一文件风格将函数命名为 `load-dataset` |
 | 智能体与会话 | `Document reviewer`、`Review naming protocol` | `Agent 1`、`Untitled` 作为长期引用 |
 | 实验、数据及证书 | `experiments/001/results.csv`、`equations__certificate.json` | `experiments/experiment-001/experiment-001-results.csv`、`certificate-final.json` |
+| 人类项目入口 | `README.md` | 把维护操作集中写入首页 |
+| 智能体项目上下文 | `README__agents.md` | `README-agents.md` |
+| 智能体操作指令 | `AGENTS.md` | 用上下文文档代替标准指令入口 |
 
 ## `Verification`
 

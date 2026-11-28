@@ -1,3 +1,7 @@
+**Email:** bojue.math@gmail.com\
+**Version:** 1.0.0\
+**Last Updated:** 2026-11-28
+
 # `Engineering taxonomy`
 
 - **并列**：从同一个类别发出的箭头表示分类归属。每个词条只归入一类。
@@ -64,6 +68,8 @@ flowchart LR
 flowchart LR
     category["需求与治理"]
     category --> stakeholder["Stakeholder"]
+    category --> instruction["Instruction"]
+    category --> audience["Audience"]
     category --> requirement["Requirement"]
     category --> constraint["Constraint"]
     category --> specification["Specification"]
@@ -80,6 +86,8 @@ flowchart LR
 <summary>打开词条链接</summary>
 
 - [`Stakeholder`](engineering-terms.md#stakeholder)
+- [`Instruction`](engineering-terms.md#instruction)
+- [`Audience`](engineering-terms.md#audience)
 - [`Requirement`](engineering-terms.md#requirement)
 - [`Constraint`](engineering-terms.md#constraint)
 - [`Specification`](engineering-terms.md#specification)
@@ -98,6 +106,8 @@ flowchart LR
 flowchart LR
     category["信息与产物"]
     category --> artifact["Artifact"]
+    category --> context["Context"]
+    category --> documentation["Documentation"]
     category --> identifier["Identifier"]
     category --> namespace["Namespace"]
     category --> metadata["Metadata"]
@@ -126,6 +136,8 @@ flowchart LR
 <summary>打开词条链接</summary>
 
 - [`Artifact`](engineering-terms.md#artifact)
+- [`Context`](engineering-terms.md#context)
+- [`Documentation`](engineering-terms.md#documentation)
 - [`Identifier`](engineering-terms.md#identifier)
 - [`Namespace`](engineering-terms.md#namespace)
 - [`Metadata`](engineering-terms.md#metadata)
@@ -197,6 +209,7 @@ flowchart LR
 flowchart LR
     category["知识组织"]
     category --> canonical_term["Canonical term"]
+    category --> single_source_of_truth["Single Source of Truth"]
     category --> dictionary_entry["Dictionary entry"]
     category --> template["Template"]
     category --> concept["Concept"]
@@ -212,6 +225,7 @@ flowchart LR
 <summary>打开词条链接</summary>
 
 - [`Canonical term`](engineering-terms.md#canonical-term)
+- [`Single Source of Truth`](engineering-terms.md#single-source-of-truth)
 - [`Dictionary entry`](engineering-terms.md#dictionary-entry)
 - [`Template`](engineering-terms.md#template)
 - [`Concept`](engineering-terms.md#concept)

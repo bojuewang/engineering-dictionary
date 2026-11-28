@@ -1,3 +1,7 @@
+**Email:** bojue.math@gmail.com\
+**Version:** 1.0.0\
+**Last Updated:** 2026-11-28
+
 # `Engineering terms`
 
 本术语表提供工程实践中的双语工作定义。涉及特定标准时，在对应词条中注明来源。按用途浏览 [`Engineering taxonomy`](taxonomy.md)，新增词条时使用 [`Term template`](../templates/term.md)。
@@ -418,3 +422,43 @@ flowchart LR
 用于后续比较、评估或跟踪变更的指定参考状态。
 
 `Related terms` [`Version`](#version) · [`Release`](#release)
+
+## `Documentation`
+
+`Chinese equivalent` 文档资料
+
+记录项目用途、设计、操作或结果的可查阅资料，供理解、使用、维护或核查。
+
+`Related terms` [`Audience`](#audience) · [`Specification`](#specification)
+
+## `Audience`
+
+`Chinese equivalent` 受众
+
+资料预期服务的读者或使用者。其角色、已有知识和任务影响所需信息及表达方式。
+
+`Related terms` [`Documentation`](#documentation)
+
+## `Context`
+
+`Chinese equivalent` 上下文
+
+理解资料或处理任务时所依赖的相关背景，如目标、当前状态及先前决定。
+
+`Related terms` [`Instruction`](#instruction)
+
+## `Instruction`
+
+`Chinese equivalent` 指令
+
+面向执行者说明应做、可做或须避免的操作，以及适用条件的陈述。
+
+`Related terms` [`Agent`](#agent) · [`Requirement`](#requirement)
+
+## `Single Source of Truth`
+
+`Chinese equivalent` 唯一事实来源
+
+为每项信息指定一个权威维护来源的做法。使用者可从多个入口访问，其他副本、摘要或索引均可追溯到该来源。
+
+`Related terms` [`Provenance`](#provenance) · [`Traceability`](#traceability)

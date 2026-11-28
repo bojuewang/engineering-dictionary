@@ -1,3 +1,7 @@
+**Email:** bojue.math@gmail.com\
+**Version:** 1.0.0\
+**Last Updated:** 2026-11-28
+
 # `File naming protocol`
 
 `Status` `Proposed`
@@ -40,6 +44,7 @@ flowchart LR
 
 - 外部工具规定的文件名或标识符形式优先，例如 `.gitignore`、`.gitattributes` 和可导入的 `Python` 模块名。第三方文件保留原名。
 - 根目录治理与导航文档采用以下明确例外：`README.md`、`AGENTS.md`、`ARCHITECTURE.md`、`SPECIFICATION.md`、`CHANGELOG.md`、`ROADMAP.md` 和 `VERIFICATION.md`。
+- 智能体上下文文档的根目录文件名固定为 `README__agents.md`。其中 `README` 表示文档族，`agents` 表示目标受众，`.md` 表示 Markdown 格式，`__` 分隔两个语义字段。此例外仅适用于这一精确拼写。
 - 对外分发文件可在主名末尾追加用 `__` 分隔的版本字段，字段内允许使用句点。例如，`engineering-dictionary__v1.0.0.zip` 的版本字段是 `v1.0.0`，实际格式扩展名为 `.zip`。
 
 ## `Examples`

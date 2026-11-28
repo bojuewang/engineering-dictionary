@@ -1,3 +1,7 @@
+**Email:** bojue.math@gmail.com\
+**Version:** 1.0.0\
+**Last Updated:** 2026-11-28
+
 # `Specification`
 
 `Status` `Proposed`
@@ -31,14 +35,34 @@ flowchart LR
 
 ### `Document layout`
 
-文档左上角依次放置以下三行。分页输出在每页左上角重复显示，时间戳和版本在同一修订的所有页面保持一致。
+本仓库的 Markdown 文档在标题之前的左上角依次放置以下三行，加粗字段名。分页输出在每页左上角重复相同的页首。合并到术语表的词条沿用术语表的页首。
 
-```text
-页码 1/12
-时间戳 2026-11-27T14:35:08-05:00
-版本 v1.0.0
+```markdown
+**Email:** bojue.math@gmail.com\
+**Version:** 1.0.0\
+**Last Updated:** YYYY-MM-DD
 ```
 
-- 页码采用 `x/xx`，其中 `x` 为从 `1` 开始的当前页，`xx` 为排版完成后的总页数。未分页的 Markdown 在文首写 `页码 1/1`。导出时按实际分页更新页码。
-- 时间戳记录文档最近一次内容更新的时间，采用 `YYYY-MM-DDTHH:mm:ss±HH:mm`，精确到秒，并保留 UTC 偏移。
-- 文档版本从 `v1.0.0` 开始。后续更新按时间戳所示当地日期与上次修订日期的关系递增。[文档修订版本](protocols/versioning.md#document-revision-version)
+- `Email` 固定为 `bojue.math@gmail.com`。
+- `Version` 使用语义化版本的 `MAJOR.MINOR.PATCH` 数字格式，从 `1.0.0` 开始。各字段按本仓库的[文档修订版本规则](protocols/versioning.md#document-revision-version)递增。
+- `Last Updated` 记录文档实际最后修改的当地日期，采用 ISO 8601 格式 `YYYY-MM-DD`。复制模板时，将日期占位符替换为实际日期。
+
+### `Audience-oriented documentation architecture`
+
+为智能体提供独立项目上下文有实际价值时，可采用此模式。小型仓库可把背景保留在普通 README 中。复杂仓库可在上下文文档中链接到子系统各自的权威资料，并通过适用的作用域指令管理操作规则。本仓库对采用的模式作如下约定。
+
+| 文档 | 受众 | 职责与信息所有权 |
+| --- | --- | --- |
+| [README.md](README.md) | 人类 | 项目描述与常用导航 |
+| [README__agents.md](README__agents.md) | 智能体 | 理解项目所需的背景、术语入口与阅读顺序 |
+| [AGENTS.md](AGENTS.md) | 智能体 | 必须或允许执行的操作、约束与必读资料 |
+| [ARCHITECTURE.md](ARCHITECTURE.md) | 共享 | 结构、组成和导航关系 |
+| [SPECIFICATION.md](SPECIFICATION.md) | 共享 | 实现必须满足的要求与约束 |
+| [VERIFICATION.md](VERIFICATION.md) | 共享 | 核查结果及支持结论的证据 |
+| [ROADMAP.md](ROADMAP.md) | 共享 | 计划与待决事项 |
+| [CHANGELOG.md](CHANGELOG.md) | 共享 | 已记录的变更 |
+
+- 首页在简介后放置阅读路径图和普通链接。箭头表示导航。智能体入口必须直接链接上下文文档，上下文与首页均应提供共享来源的入口。
+- 独立上下文采用精确拼写的 `README__agents.md`，参见[文件命名例外](protocols/file-naming.md#exceptions)。
+- 每项定义、规则或证据由其负责的文档维护。其他文档用简短摘要和相对链接引用。修改时核对相关摘要、链接和证据，避免多处文本产生不同结论。
+- 核查文件名、角色边界、智能体入口、链接及锚点、图的语法与导航方向，以及结论能否追溯到证据。记录检查方式、结果和覆盖限制。[文档架构协议](protocols/documentation-architecture.md)

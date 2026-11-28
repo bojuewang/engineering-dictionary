@@ -1,3 +1,7 @@
+**Email:** bojue.math@gmail.com\
+**Version:** 1.0.0\
+**Last Updated:** 2026-11-28
+
 # Changelog
 
 ## `v0.1.0`
@@ -11,9 +15,10 @@
 
 ## `Unreleased`
 
+- 引入面向受众的文档架构、智能体上下文入口及配套命名约定，补充相关术语和核查记录。
 - 从首页到各文档统一有向图，并补齐全部术语的分类图。
 
 ```mermaid
 flowchart LR
-    base["v0.1.0 公开基线"] --> next["Unreleased 全仓库有向图"]
+    base["v0.1.0 公开基线"] --> next["Unreleased 有向图与文档架构"]
 ```

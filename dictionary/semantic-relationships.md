@@ -1,3 +1,7 @@
+**Email:** bojue.math@gmail.com\
+**Version:** 1.0.0\
+**Last Updated:** 2026-11-28
+
 # `Semantic relationships`
 
 ## 跨类别关系
@@ -29,3 +33,5 @@ flowchart LR
 同一对象可以同时体现不同关系。子系统在类型上属于系统，在具体构造中又可以是较大系统的一部分。词条之间的双向导航只表示关联，关系方向以显式标签为准。
 
 显式关系写作独立段落，格式为行内代码关系名加目标词条链接。普通 `Related terms` 段落用于导航。保留可阅读的 `Markdown` 链接，当前阶段采用此表示法记录关系。
+
+文档架构中的跨类别关联可用 `related-to` 表示。[`Audience`](engineering-terms.md#audience) ↔ [`Documentation`](engineering-terms.md#documentation) 关联预期读者与文档资料。[`Single Source of Truth`](engineering-terms.md#single-source-of-truth) ↔ [`Provenance`](engineering-terms.md#provenance) 关联权威来源与来源追溯。

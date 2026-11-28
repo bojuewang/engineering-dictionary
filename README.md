@@ -1,36 +1,32 @@
+**Email:** bojue.math@gmail.com\
+**Version:** 1.0.0\
+**Last Updated:** 2026-11-28
+
 # Engineering Dictionary
 
 工程协作速查。用它查术语、给工作产物命名、记录验收证据。
 
-## 仓库总览
-
 ```mermaid
 flowchart LR
-    root["README.md"] --> terms["dictionary/"]
-    root --> protocols["protocols/"]
-    root --> templates["templates/"]
-    root --> governance["维护与发布"]
-    root --> git["Git 配置"]
-    terms --> taxonomy["taxonomy.md"]
-    taxonomy --> glossary["engineering-terms.md"]
-    taxonomy --> relations["semantic-relationships.md"]
-    protocols --> filenames["file-naming.md"]
-    protocols --> directories["directory-naming.md"]
-    protocols --> naming["naming-conventions.md"]
-    protocols --> versions["versioning.md"]
-    templates --> term["term.md"]
-    templates --> protocol["protocol.md"]
-    governance --> architecture["ARCHITECTURE.md"]
-    governance --> specification["SPECIFICATION.md"]
-    governance --> agents["AGENTS.md"]
-    governance --> roadmap["ROADMAP.md"]
-    governance --> changelog["CHANGELOG.md"]
-    governance --> verification["VERIFICATION.md"]
-    git --> attrs[".gitattributes"]
-    git --> ignore[".gitignore"]
+    human["Human"] --> human_readme["README.md"]
+    agent["AI Agent"] --> instructions["AGENTS.md"]
+    instructions --> agent_readme["README__agents.md"]
+
+    subgraph shared["Shared Source of Truth"]
+        direction TB
+        architecture["ARCHITECTURE.md"]
+        specification["SPECIFICATION.md"]
+        verification["VERIFICATION.md"]
+        roadmap["ROADMAP.md"]
+        changelog["CHANGELOG.md"]
+        knowledge["Project Knowledge & Artifacts"]
+    end
+
+    human_readme --> shared
+    agent_readme --> shared
 ```
 
-箭头表示导航入口，连到同一层的分支可按任务选择。图例见[有向图约定](SPECIFICATION.md#directed-diagrams)。
+箭头表示阅读与导航。智能体从 [AGENTS.md](AGENTS.md) 进入[项目上下文](README__agents.md)。共享资料包括[架构](ARCHITECTURE.md)、[规范](SPECIFICATION.md)、[验证证据](VERIFICATION.md)、[路线图](ROADMAP.md)、[变更日志](CHANGELOG.md)和下方的术语与协议。
 
 ## 开始工作
 
@@ -41,13 +37,4 @@ flowchart LR
 ## 速查
 
 - **查或补术语**　[全部术语图](dictionary/taxonomy.md) · [完整词典](dictionary/engineering-terms.md) · [跨类别关系](dictionary/semantic-relationships.md) · [词条模板](templates/term.md)
-- **统一团队约定**　[资源命名](protocols/naming-conventions.md) · [版本管理](protocols/versioning.md) · [协议模板](templates/protocol.md)
-
-<details>
-<summary>维护与发布</summary>
-
-[架构](ARCHITECTURE.md) · [规范](SPECIFICATION.md) · [维护规则](AGENTS.md) · [路线图](ROADMAP.md) · [变更日志](CHANGELOG.md) · [基线核查](VERIFICATION.md)
-
-`v0.1.0` 是初始公开基线。协议状态见各自文档。项目尚未授予再利用许可证。
-
-</details>
+- **统一团队约定**　[资源命名](protocols/naming-conventions.md) · [版本管理](protocols/versioning.md) · [协议模板](templates/protocol.md) · [文档架构协议](protocols/documentation-architecture.md)

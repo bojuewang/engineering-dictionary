@@ -1,3 +1,7 @@
+**Email:** bojue.math@gmail.com\
+**Version:** 1.0.0\
+**Last Updated:** 2026-11-28
+
 # `Architecture`
 
 ```mermaid
@@ -13,3 +17,9 @@ flowchart LR
 - 根目录负责导航、维护与发布。实际用例或工具有明确需求时再独立存放。
 
 移动词条时更新引用。词条与协议格式见 [`Specification`](SPECIFICATION.md)。
+
+## `Audience-oriented documentation architecture`
+
+[README.md](README.md) is the human entry point. [AGENTS.md](AGENTS.md) is the operational entry point for agents and links directly to [README__agents.md](README__agents.md) for context. Both reading paths lead to shared sources, as shown in the [navigation diagram](README.md).
+
+Each fact, rule, plan, or verification claim has one authoritative home. Audience-specific documents summarize what readers need to get started and link to the owner for details. Update the owner first when information changes, then check the affected links and summaries. See the [responsibility and ownership rules](SPECIFICATION.md#audience-oriented-documentation-architecture).

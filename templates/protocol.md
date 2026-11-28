@@ -1,6 +1,6 @@
-页码 1/1\
-时间戳 `<YYYY-MM-DDTHH:mm:ss±HH:mm>`\
-版本 `v1.0.0`
+**Email:** bojue.math@gmail.com\
+**Version:** 1.0.0\
+**Last Updated:** YYYY-MM-DD
 
 # `Protocol name`
 
@@ -8,7 +8,7 @@
 
 将标题替换为英文协议名称。状态使用 `Proposed`、`Adopted` 或 `Deprecated` 中与实际情况对应的一个值。
 
-按[文档排版规范](../SPECIFICATION.md#document-layout)填写页首字段。
+按[文档排版规范](../SPECIFICATION.md#document-layout)将页首的 `YYYY-MM-DD` 替换为新文档实际最后修改的日期。
 
 ```mermaid
 flowchart LR
