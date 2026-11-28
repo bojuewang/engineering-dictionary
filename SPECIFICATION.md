@@ -1,6 +1,6 @@
 **Email:** bojue.math@gmail.com\
 **Version:** 1.0.0\
-**Last Updated:** 2026-11-28 00
+**Last Updated:** 2026-11-28 00:32:05
 
 # `Specification`
 
@@ -40,12 +40,12 @@ flowchart LR
 ```markdown
 **Email:** bojue.math@gmail.com\
 **Version:** 1.0.0\
-**Last Updated:** YYYY-MM-DD HH
+**Last Updated:** YYYY-MM-DD HH:mm:ss
 ```
 
 - `Email` 固定为 `bojue.math@gmail.com`。
 - `Version` 使用语义化版本的 `MAJOR.MINOR.PATCH` 数字格式，从 `1.0.0` 开始。各字段按本仓库的[文档修订版本规则](protocols/versioning.md#document-revision-version)递增。
-- `Last Updated` 记录文档实际最后修改的当地日期和小时，采用仓库约定 `YYYY-MM-DD HH`。`HH` 使用 24 小时制（`00` 至 `23`），省略分钟和秒。例如 `2026-11-28 09`。复制模板时，将占位符替换为实际日期和小时。
+- `Last Updated` 记录文档实际最后修改的当地日期和时间，采用仓库约定 `YYYY-MM-DD HH:mm:ss`。时间使用 24 小时制，精确到秒。例如 `2026-11-28 09:15:42`。复制模板时，将占位符替换为实际日期和小时。
 
 ### `Audience-oriented documentation architecture`
 

@@ -1,6 +1,6 @@
 **Email:** bojue.math@gmail.com\
 **Version:** 1.0.0\
-**Last Updated:** 2026-11-28 00
+**Last Updated:** 2026-11-28 00:32:05
 
 # `Versioning protocol`
 
@@ -26,7 +26,7 @@ flowchart LR
 
 ### `Document revision version`
 
-文档首次记录版本时使用 `1.0.0`。版本采用 `MAJOR.MINOR.PATCH` 数字格式，各字段使用不补零的十进制整数。每次修改文档时，用实际修改的当地日期和小时更新 `Last Updated`，并比较更新前后的日期部分，按以下优先级更新版本。
+文档首次记录版本时使用 `1.0.0`。版本采用 `MAJOR.MINOR.PATCH` 数字格式，各字段使用不补零的十进制整数。每次修改文档时，用实际修改的当地日期和时间更新 `Last Updated`，并比较更新前后的日期部分，按以下优先级更新版本。
 
 1. 跨月（含跨年）时，`MAJOR` 加 `1`，`MINOR` 和 `PATCH` 归零。
 2. 同月跨周时，`MINOR` 加 `1`，`PATCH` 归零。每月 `1` 至 `7` 日为第一周，此后每七天进入下一周。

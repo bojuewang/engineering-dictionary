@@ -1,6 +1,6 @@
 **Email:** bojue.math@gmail.com\
 **Version:** 1.0.0\
-**Last Updated:** 2026-11-28 00
+**Last Updated:** 2026-11-28 00:32:05
 
 # Agent instructions
 
@@ -17,7 +17,7 @@ These instructions apply throughout this repository unless a more specific instr
 5. Follow the naming and versioning protocols. External ecosystem conventions take precedence where required.
 6. Preserve existing user work. Do not rename/delete large sets of files, overwrite unrelated changes, commit, publish, or push without authorization.
 7. For changes, check internal relative links, consistency of terms, naming, and UTF-8 text. Report modified paths, checks performed, and unresolved decisions. Do not claim checks that were not run.
-8. Follow the [document layout](SPECIFICATION.md#document-layout). Put the fixed `Email` (`bojue.math@gmail.com`), the `MAJOR.MINOR.PATCH` `Version`, and the actual local modification date and hour (`Last Updated`, `YYYY-MM-DD HH`) above the title in that order. Apply the [document revision rules](protocols/versioning.md#document-revision-version) on update. Replace date and hour placeholders when copying templates.
+8. Follow the [document layout](SPECIFICATION.md#document-layout). Put the fixed `Email` (`bojue.math@gmail.com`), the `MAJOR.MINOR.PATCH` `Version`, and the actual local modification date and time (`Last Updated`, `YYYY-MM-DD HH:mm:ss`) above the title in that order. Apply the [document revision rules](protocols/versioning.md#document-revision-version) on update. Replace date and time placeholders when copying templates.
 
 ## 维护流程
 
